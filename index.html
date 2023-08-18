@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        /* Dark theme styles */
+        body.dark-theme {
+            background-color: #121212;
+            color: white;
+        }
+
+        /* Light theme styles */
+        body.light-theme {
+            background-color: white;
+            color: black;
+        }
+
+        .search-bar {
+            margin-left: auto;
+            margin-right: 15px;
+        }
+    </style>
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .video-embed {
+            width: 32%;
+            /* Adjust the width as needed */
+        }
+    </style>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 60px;
+            padding-right: 60px;
+            padding-bottom: 60px;
+            padding-left: 60px;
+        }
+
+        .subscribe {
+            flex-basis: 50%;
+        }
+
+        .subscribe h2 {
+            font-weight: bold;
+        }
+
+        .subscribe p {
+            font-size: 12px;
+        }
+
+        .subscribe input[type="email"] {
+            font-size: 16px;
+            padding: 15px 23px;
+            border-color: secondary;
+            border-radius: 0px;
+            border-width: 1px;
+        }
+
+        .subscribe button {
+            font-size: 16px;
+            padding: 15px 23px;
+            margin: 0px;
+            margin-left: 10px;
+            border-color: secondary;
+            border-radius: 0px;
+            border-width: 1px;
+            background-color: secondary-background-color;
+            color: text-color;
+        }
+
+        .image-container {
+            border-radius: 16px;
+            padding: 70px;
+            background-color: primary-background-color;
+            color: text-color;
+            max-width: 345px;
+        }
+    </style>
+    <style>
+        .green-button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .green-button:hover {
+            background-color: darkgreen;
+        }
+
+        .unseen-clips {
+            margin-left: 3%;
+        }
+
+        .our-movies {
+            margin-left: 3%;
+        }
+    </style>
+    <style>
+        .subscribe-form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .green-button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .green-button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Rockwell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Waltograph&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monarda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Brush+Script&display=swap" rel="stylesheet">
+
+
+
+    <title>DreamVerser Productions</title>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.jpg" class="img-thumbnail" alt="logo" width="40" height="40">
+                <span class="ml-2" style="font-family: 'Waltograph', cursive;">DreamVerse</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex">
+                <button class="btn btn-dark mr-2" id="darkThemeBtn">Dark</button>
+                <button class="btn btn-light" id="lightThemeBtn">Light</button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MENU
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about us.html">ABOUT US</a></li>
+                            <li><a class="dropdown-item" href="#">CAREER</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">CONTACT US</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Type Here..." aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!--slogan-->
+    <div class="container">
+        <div class="row">
+            <div class="col">
+
+            </div>
+            <div class="col-md-10  mx-4 d-flex align-items-center">
+                <h1 class="text-center fw-bolder fs-1" style="font-family: 'Brush Script', cursive;">Excellence in
+                    Motion: Your Story, Our Passion.</h1>
+            </div>
+        </div>
+        <div class="col">
+
+        </div>
+    </div>
+    </div>
+    <!--new at dreamverse-->
+    <div class="row featurette">
+        <div class="col-md-3 my-4 mx-5 mb-3 ">
+            <h1 class="fw-bolder">NEW AT DREAMVERSE PRODUCTIONS
+                <span class="text-secondary" style="--bs-text-opacity: .6;">It’ll blow your mind.</span>
+            </h1>
+            <p class="fw-medium lh-2">In Mission: Impossible – Dead Reckoning Part One, Ethan Hunt (Tom Cruise) and his
+                IMF team embark on their most dangerous mission yet:
+                To track down a terrifying new weapon that threatens all of humanity before it falls into the wrong
+                hands. With control of the future and the fate of the world at stake,
+                and dark forces from Ethan\\\’s past closing in, a deadly race around the globe begins. Confronted by a
+                mysterious, all-powerful enemy, Ethan is forced to consider that nothing can
+                matter more than his mission – not even the lives of those he cares about most.</p>
+        </div>
+        <div class="col-md-5 mx-8 mb-3 my-4">
+            <video controls class="img-fluid mx-auto" width="100%" height="auto">
+                <source src="mission.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <!--OUR MOVIES-->
+    <di class="container our-movies">
+        <h2 class="mx-5 fw-bolder fs-1 fst-Rockwell" style="font-family: 'Rockwell', serif;">OUR MOVIES</h2>
+    </di>
+    <!--gallery-->
+    <div class="row mt-5 mx-2 ">
+        <div class="col-md-4 mb-2">
+            <img src="flashr.jpg" alt="Gallery Image" class="img-fluid" width="511">
+        </div>
+        <div class="col-md-4 mb-2">
+            <img src="bar.jpg" alt="Gallery Image" class="img-fluid" width="535">
+        </div>
+        <div class="col-md-4 mb-2">
+            <img src="oppen.jpg" alt="Gallery Image" class="img-fluid" width="425" height="600">
+        </div>
+    </div>
+    <!--unseen clips text-->
+    <di class="container unseen-clips my-4 ">
+        <h2 class="mx-5 fw-bolder fs-1 fst-Rockwell" style="font-family: 'Rockwell', serif;">UNSEEN CLIPS</h2>
+    </di>
+    <!--more videos-->
+    <div class="video-container">
+        <div class="video-embed">
+            <iframe width="100%" height="360" src="barbeibts.mp4" allowfullscreen="true" style="border:0;"
+                sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe>
+        </div>
+        <div class="video-embed">
+            <iframe width="100%" height="360" src="oppenbts.mp4" allowfullscreen="true" style="border:0;"
+                sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe>
+        </div>
+        <div class="video-embed">
+            <iframe width="100%" height="360" src="flashbts.mp4" allowfullscreen="true" style="border:0;"
+                sandbox="allow-scripts allow-same-origin allow-popups allow-presentation"></iframe>
+        </div>
+    </div>
+    <!--subscibe the newsletter-->
+    <div class="container">
+        <div class="subscribe">
+            <h2><strong>Subscribe to our newsletters and get updates from DreamVerse Productions delivered right to your
+                    inbox.</strong></h2>
+            <p>Join Millions of happy subscribers!</p>
+            <form action="your_custom_subscription_endpoint" method="post" accept-charset="utf-8"
+                id="subscription-form">
+                <div class="subscribe-form">
+                    <input required="required" type="email" name="email"
+                        class="no-border-radius has-secondary-border-color" placeholder="Enter your email…" value="">
+                    <button type="submit" class="green-button"><strong>SUBSCRIBE</strong></button>
+                </div>
+                <input type="hidden" name="action" value="subscribe">
+                <input type="hidden" name="blog_id" value="your_blog_id">
+                <input type="hidden" name="source" value="your_source_url">
+                <input type="hidden" name="sub-type" value="subscribe-block">
+                <input type="hidden" name="redirect_fragment" value="subscribe-blog">
+                <input type="hidden" name="_nonce" value="your_nonce_value">
+            </form>
+            <div id="subscription-feedback" style="display: none;">
+                <p>Thank you for subscribing! You will receive updates from DreamVerse Productions in your inbox.</p>
+            </div>
+        </div>
+        <div class="image-container">
+            <img src="jsus.jpg" alt="" style="width: 345px; height: 518px;">
+        </div>
+    </div>
+    <!--footer-->
+    <div class="container-fluid">
+        <div class="row align-items-center bg-dark text-light p-3">
+            <div class="col-md-5">
+                <h1 class="fw-bolder fs-5">Excellence in Motion: Your Story, Our Passion.</h1>
+                <p class="mt-2">We are a local organization that provides support within the local community to
+                    organizations that involve volunteers.</p>
+            </div>
+            <div class="col-md-2 my-1">
+                <h4 class="text-light p-2 mb-0">Get in Touch</h4>
+                <p class="mt-2 mx-3"><a href="mailto:preetham92.official@gmail.com" class="text-light">Email Us</a></p>
+            </div>
+            <div class="col-md-2">
+                <h4 class="text-light p-2 mb-0">Who We Are</h4>
+                <p class="mt-2 mx-3">
+                    <a href="about us.html" class="text-light">About</a><br>
+                    <a href="#" class="text-light">Terms of Service</a><br>
+                    <a href="#" class="text-light">Privacy Policy</a>
+                </p>
+            </div>
+            <div class="col-md-2">
+                <h4 class="text-light p-2 mb-0">Follow Us</h4>
+                <p class="mt-2 mx-3">
+                    <a href="https://www.facebook.com/" class="text-light">Facebook</a><br>
+                    <a href="https://twitter.com/" class="text-light">Twitter</a><br>
+                    <a href="https://www.instagram.com/accounts/login/" class="text-light">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        const darkThemeBtn = document.getElementById('darkThemeBtn');
+        const lightThemeBtn = document.getElementById('lightThemeBtn');
+        const body = document.body;
+
+        darkThemeBtn.addEventListener('click', () => {
+            body.classList.add('dark-theme');
+            body.classList.remove('light-theme');
+        });
+
+        lightThemeBtn.addEventListener('click', () => {
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+        });
+    </script>
+    <script>
+        document.getElementById("subscription-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Simulate a successful subscription (for demonstration purposes)
+            // You should replace this with your actual subscription handling code
+
+            // Display the subscription feedback message
+            document.getElementById("subscription-feedback").style.display = "block";
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("search-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Get the search input value
+            var searchInput = document.getElementById("search-input").value.toLowerCase();
+
+            // Simulate search results (for demonstration purposes)
+            var searchData = [
+                "result 1",
+                "result 2",
+                "result 3"
+            ];
+
+            var searchResults = searchData.filter(function (result) {
+                return result.toLowerCase().includes(searchInput);
+            });
+
+            // Update the search results or display a message
+            var searchResultsContainer = document.getElementById("search-results");
+            if (searchResults.length > 0) {
+                var resultsHtml = "<ul>";
+                searchResults.forEach(function (result) {
+                    resultsHtml += "<li>" + result + "</li>";
+                });
+                resultsHtml += "</ul>";
+                searchResultsContainer.innerHTML = resultsHtml;
+            } else {
+                searchResultsContainer.innerHTML = "<p>No results found for '" + searchInput + "'</p>";
+            }
+        });
+    </script>
+</body>
+
+</html>

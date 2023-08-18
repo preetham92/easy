@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        /* Dark theme styles */
+        body.dark-theme {
+            background-color: #121212;
+            color: white;
+        }
+
+        /* Light theme styles */
+        body.light-theme {
+            background-color: white;
+            color: black;
+        }
+
+        .search-bar {
+            margin-left: auto;
+            margin-right: 15px;
+        }
+    </style>
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .video-embed {
+            width: 32%;
+            /* Adjust the width as needed */
+        }
+    </style>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 60px;
+            padding-right: 60px;
+            padding-bottom: 60px;
+            padding-left: 60px;
+        }
+
+        .subscribe {
+            flex-basis: 50%;
+        }
+
+        .subscribe h2 {
+            font-weight: bold;
+        }
+
+        .subscribe p {
+            font-size: 12px;
+        }
+
+        .subscribe input[type="email"] {
+            font-size: 16px;
+            padding: 15px 23px;
+            border-color: secondary;
+            border-radius: 0px;
+            border-width: 1px;
+        }
+
+        .subscribe button {
+            font-size: 16px;
+            padding: 15px 23px;
+            margin: 0px;
+            margin-left: 10px;
+            border-color: secondary;
+            border-radius: 0px;
+            border-width: 1px;
+            background-color: secondary-background-color;
+            color: text-color;
+        }
+
+        .image-container {
+            border-radius: 16px;
+            padding: 70px;
+            background-color: primary-background-color;
+            color: text-color;
+            max-width: 345px;
+        }
+    </style>
+    <style>
+        .green-button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .green-button:hover {
+            background-color: darkgreen;
+        }
+
+        .unseen-clips {
+            margin-left: 3%;
+        }
+
+        .our-movies {
+            margin-left: 3%;
+        }
+    </style>
+    <style>
+        .subscribe-form {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .green-button {
+            background-color: green;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .green-button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Rockwell&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Waltograph&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monarda&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Brush+Script&display=swap" rel="stylesheet">
+
+
+
+    <title>DreamVerser Productions</title>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.jpg" class="img-thumbnail" alt="logo" width="40" height="40">
+                <span class="ml-2" style="font-family: 'Waltograph', cursive;">DreamVerse</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="d-flex">
+                <button class="btn btn-dark mr-2" id="darkThemeBtn">Dark</button>
+                <button class="btn btn-light" id="lightThemeBtn">Light</button>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            MENU
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about us.html">ABOUT US</a></li>
+                            <li><a class="dropdown-item" href="#">CAREER</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">CONTACT US</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Type Here..." aria-label="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div class="block-group has-global-padding is-layout-constrained block-group-is-layout-constrained"
+        style="padding-right:40px;padding-left:40px">
+        <h2 style="padding-top:60px;padding-bottom:20px;" class="block-post-title">ABOUT US</h2>
+
+
+
+
+        <div class="block-group alignfull has-global-padding is-layout-constrained block-group-is-layout-constrained"
+            style="padding-right:40px;padding-left:40px">
+            <div
+                class="entry-content alignfull block-post-content has-global-padding is-layout-constrained block-post-content-is-layout-constrained">
+                <figure class="block-image alignleft size-large is-resized"><img data-attachment-id="54"
+                        data-permalink="https://preetham92.wordpress.com/about-us/7-1/"
+                        data-orig-file="https://preetham92.files.wordpress.com/2023/08/7-1.jpg" data-orig-size="225,225"
+                        data-comments-opened="1"
+                        data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
+                        data-image-title="7-1" data-image-description="" data-image-caption=""
+                        data-medium-file="https://preetham92.files.wordpress.com/2023/08/7-1.jpg?w=225"
+                        data-large-file="https://preetham92.files.wordpress.com/2023/08/7-1.jpg?w=225"
+                        src="https://preetham92.files.wordpress.com/2023/08/7-1.jpg?w=225" alt="" class="wp-image-54"
+                        style="width:622px;height:622px" width="622" height="622"
+                        srcset="https://preetham92.files.wordpress.com/2023/08/7-1.jpg 225w, https://preetham92.files.wordpress.com/2023/08/7-1.jpg?w=150 150w"
+                        sizes="(max-width: 622px) 100vw, 622px"></figure>
+
+
+
+                <h1 class="block-heading"><strong>OUR VISION</strong></h1>
+
+
+
+                <p>Fill the world with emotion, through the power of creativity and technology.</p>
+
+
+
+                <h1 class="block-heading"><strong>Values</strong></h1>
+
+
+
+                <h4 class="block-heading"><strong>Dreams &amp; Curiosity</strong></h4>
+
+
+
+                <p>Pioneer the future with dreams and curiosity.</p>
+
+
+
+                <h4 class="block-heading"><strong>Diversity</strong></h4>
+
+
+
+                <p>Pursue the creation of the very best by harnessing diversity and varying viewpoints.</p>
+
+
+
+                <h4 class="block-heading">Integrity &amp; SincerityEarn</h4>
+
+
+
+                <p>Earn the trust for the Sony brand through ethical and responsible conduct.</p>
+
+
+
+                <h4 class="block-heading">Sustainability</h4>
+
+
+
+                <p>Fulfill our stakeholder responsibilities through disciplined business practices.</p>
+            </div>
+        </div>
+
+
+
+        <div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+    </div>
+
+
+
+
+    <!--footer-->
+    <div class="container-fluid">
+        <div class="row align-items-center bg-dark text-light p-3">
+            <div class="col-md-5">
+                <h1 class="fw-bolder fs-5">Excellence in Motion: Your Story, Our Passion.</h1>
+                <p class="mt-2">We are a local organization that provides support within the local community to
+                    organizations that involve volunteers.</p>
+            </div>
+            <div class="col-md-2 my-1">
+                <h4 class="text-light p-2 mb-0">Get in Touch</h4>
+                <p class="mt-2 mx-3"><a href="mailto:preetham92.official@gmail.com" class="text-light">Email Us</a></p>
+            </div>
+            <div class="col-md-2">
+                <h4 class="text-light p-2 mb-0">Who We Are</h4>
+                <p class="mt-2 mx-3">
+                    <a href="about us.html" class="text-light">About</a><br>
+                    <a href="#" class="text-light">Terms of Service</a><br>
+                    <a href="#" class="text-light">Privacy Policy</a>
+                </p>
+            </div>
+            <div class="col-md-2">
+                <h4 class="text-light p-2 mb-0">Follow Us</h4>
+                <p class="mt-2 mx-3">
+                    <a href="https://www.facebook.com/" class="text-light">Facebook</a><br>
+                    <a href="https://twitter.com/" class="text-light">Twitter</a><br>
+                    <a href="https://www.instagram.com/accounts/login/" class="text-light">Instagram</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        const darkThemeBtn = document.getElementById('darkThemeBtn');
+        const lightThemeBtn = document.getElementById('lightThemeBtn');
+        const body = document.body;
+
+        darkThemeBtn.addEventListener('click', () => {
+            body.classList.add('dark-theme');
+            body.classList.remove('light-theme');
+        });
+
+        lightThemeBtn.addEventListener('click', () => {
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script>
+        document.getElementById("search-form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+
+            // Get the search input value
+            var searchInput = document.getElementById("search-input").value.toLowerCase();
+
+            // Simulate search results (for demonstration purposes)
+            var searchData = [
+                "result 1",
+                "result 2",
+                "result 3"
+            ];
+
+            var searchResults = searchData.filter(function (result) {
+                return result.toLowerCase().includes(searchInput);
+            });
+
+            // Update the search results or display a message
+            var searchResultsContainer = document.getElementById("search-results");
+            if (searchResults.length > 0) {
+                var resultsHtml = "<ul>";
+                searchResults.forEach(function (result) {
+                    resultsHtml += "<li>" + result + "</li>";
+                });
+                resultsHtml += "</ul>";
+                searchResultsContainer.innerHTML = resultsHtml;
+            } else {
+                searchResultsContainer.innerHTML = "<p>No results found for '" + searchInput + "'</p>";
+            }
+        });
+    </script>
+</body>
+
+</html>
