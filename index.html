@@ -228,9 +228,10 @@
         </div>
     </div>
     <!--OUR MOVIES-->
-    <di class="container our-movies">
-        <h2 class="mx-5 fw-bolder fs-1 fst-Rockwell" style="font-family: 'Rockwell', serif;">OUR MOVIES</h2>
-    </di>
+    <div class="container our-movies d-flex mx-4 align-items-center pl-5">
+        <h2 class="mx-auto fw-bolder fs-1 fst-Rockwell" style="font-family: 'Rockwell', serif;">OUR MOVIES</h2>
+    </div>
+    
     <!--gallery-->
     <div class="row mt-5 mx-2 ">
         <div class="col-md-4 mb-2">
@@ -244,9 +245,10 @@
         </div>
     </div>
     <!--unseen clips text-->
-    <di class="container unseen-clips my-4 ">
-        <h2 class="mx-5 fw-bolder fs-1 fst-Rockwell" style="font-family: 'Rockwell', serif;">UNSEEN CLIPS</h2>
-    </di>
+    <div class="container our-movies d-flex mx-4 align-items-center pl-5">
+        <h2 class="mx-auto fw-bolder fs-1 fst-Rockwell" style="font-family: 'Rockwell', serif;">UNSEEN CLIPS</h2>
+    </div>
+    
     <!--more videos-->
     <div class="video-container">
         <div class="video-embed">
@@ -263,33 +265,34 @@
         </div>
     </div>
     <!--subscibe the newsletter-->
-    <div class="container">
-        <div class="subscribe">
-            <h2><strong>Subscribe to our newsletters and get updates from DreamVerse Productions delivered right to your
-                    inbox.</strong></h2>
-            <p>Join Millions of happy subscribers!</p>
-            <form action="your_custom_subscription_endpoint" method="post" accept-charset="utf-8"
-                id="subscription-form">
-                <div class="subscribe-form">
-                    <input required="required" type="email" name="email"
-                        class="no-border-radius has-secondary-border-color" placeholder="Enter your email…" value="">
-                    <button type="submit" class="green-button"><strong>SUBSCRIBE</strong></button>
+    <div class="container my-8">
+        <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+            <div class="subscribe mb-4 mb-md-0">
+                <h2><strong>Subscribe to our newsletters and get updates from DreamVerse Productions delivered right to your inbox.</strong></h2>
+                <p>Join Millions of happy subscribers!</p>
+                <form action="your_custom_subscription_endpoint" method="post" accept-charset="utf-8" id="subscription-form">
+                    <div class="subscribe-form">
+                        <input required="required" type="email" name="email" class="no-border-radius has-secondary-border-color" placeholder="Enter your email…" value="">
+                        <button type="submit" class="green-button"><strong>SUBSCRIBE</strong></button>
+                    </div>
+                    <input type="hidden" name="action" value="subscribe">
+                    <input type="hidden" name="blog_id" value="your_blog_id">
+                    <input type="hidden" name="source" value="your_source_url">
+                    <input type="hidden" name="sub-type" value="subscribe-block">
+                    <input type="hidden" name="redirect_fragment" value="subscribe-blog">
+                    <input type="hidden" name="_nonce" value="your_nonce_value">
+                </form>
+                <div id="subscription-feedback" style="display: none;">
+                    <p>Thank you for subscribing! You will receive updates from DreamVerse Productions in your inbox.</p>
                 </div>
-                <input type="hidden" name="action" value="subscribe">
-                <input type="hidden" name="blog_id" value="your_blog_id">
-                <input type="hidden" name="source" value="your_source_url">
-                <input type="hidden" name="sub-type" value="subscribe-block">
-                <input type="hidden" name="redirect_fragment" value="subscribe-blog">
-                <input type="hidden" name="_nonce" value="your_nonce_value">
-            </form>
-            <div id="subscription-feedback" style="display: none;">
-                <p>Thank you for subscribing! You will receive updates from DreamVerse Productions in your inbox.</p>
+            </div>
+            <div class="image-container md-5 mx-8 mb-3 my-2">
+                <img src="jsus.jpg" alt="" style="width: 345px; height: 518px;">
             </div>
         </div>
-        <div class="image-container">
-            <img src="jsus.jpg" alt="" style="width: 345px; height: 518px;">
-        </div>
     </div>
+    
+        
     <!--footer-->
     <div class="container-fluid">
         <div class="row align-items-center bg-dark text-light p-3">
